@@ -1,8 +1,3 @@
 # Created by .ignore support plugin (hsz.mobi)
-.gitignore
-.idea/copyright/
-.idea/modules.xml
-.idea/phpAjaxCrud.iml
-.idea/workspace.xml
-.idea/vcs.xml
-.idea/sqldialects.xml
+/.gitignore
+/.idea
