@@ -9,13 +9,13 @@ $(function () {
 function addRecord() {
     // get values
     var first_name = $("#first_name").val() ;
-    var last_name = $("#last_name").val() ;
-    var email = $("#email").val() ;
+    var last_name  = $("#last_name").val() ;
+    var email      = $("#email").val() ;
     // Add record with ajax post function
     $.post("ajax/addRecord.php", {
         first_name: first_name,
-        last_name: last_name,
-        email: email
+        last_name:  last_name,
+        email:      email
     }, function (data, status) {
         // close the modal
         $("#modal_add").modal("hide") ;
@@ -35,3 +35,8 @@ function readRecords() {
         $(".records_content").html(data) ;
     }) ;
 }
+
+// read records on page load
+$(function () {
+    readRecords() ; // calling function
+}) ;
