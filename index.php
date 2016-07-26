@@ -14,7 +14,7 @@
         <div class="col-md-12">
             <h3>PHP CRUD using jQuery and Ajax
                 <button class="pull-right btn btn-primary" id="button_add">
-                    Sign up
+                    Add new User
                 </button>
             </h3>
             <hr>
