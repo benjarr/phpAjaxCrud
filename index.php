@@ -117,6 +117,7 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
                 <button type="button" class="btn btn-primary" onclick="UpdateUserDetails()">Save changes</button>
+                <input type="hidden" id="hidden_user_id">
             </div>
         </div>
     </div>

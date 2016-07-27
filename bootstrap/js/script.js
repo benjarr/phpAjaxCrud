@@ -51,3 +51,18 @@ function DeleteUser(id) {
         }) ;
     }
 }
+
+function GetUserDetails(id) {
+    // Add User Id to the hidden field
+    $("#hidden_user_id").val(id) ;
+    $.post("ajax.readUserDetails.php", {id: id}, function (data, status) {
+        // PARSE json data
+        var user = JSON.parse(data) ;
+        // Assign existing values to the modal
+        $("#update_first_name").val(user.first_name) ;
+        $("#update_last_name").val(user.last_name) ;
+        $("#update_email").val(user.email) ;
+    }) ;
+    // Open Update modal
+    $("#modal_update").modal({backdrop: "static"}) ;
+}
