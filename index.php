@@ -79,3 +79,45 @@
         </div>
     </div>
 </div>
+
+<!-- Update User details modal -->
+<div class="modal fade" id="modal_update" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Update User</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="control-label col-sm-3" for="update_first_name">First Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="update_first_name" placeholder="Enter first name" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-3" for="update_last_name" >Last Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="update_last_name" placeholder="Enter last name" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-3" for="update_email">Email Address</label>
+                        <div class="col-sm-9">
+                            <input type="email" id="update_email" placeholder="Email Address" class="form-control" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" onclick="UpdateUserDetails()">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
